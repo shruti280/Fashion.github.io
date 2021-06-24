@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+
+
+
+        <style>
+            body {
+                font-family: "Lato", sans-serif;
+            }
+
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            element.style {
+                font-size: 30px;
+                cursor: pointer;
+                float: right;
+                padding-right: 90px;
+
+            }
+
+            #menu{
+                    display: none;
+                }
+
+            /* .sidenav {
+                display: none;
+            } */
+
+            /* body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    float: right;
+    right: 100%;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+} */
+
+            @media screen and (max-height: 450px) {
+                .sidenav {
+                    padding-top: 15px;
+                }
+
+                .sidenav a {
+                    font-size: 18px;
+                }
+                #menu{
+                    display: none;
+                }
+            }
+
+            @media (max-width: 800px) {
+               #menu{
+                   display: block;
+               }
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#banner">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#Men">Men</a>
+                <a href="#Women">Women</a>
+                <a href="#Accessories">Accessories</a>
+                <a href="#Contact">Contact Us</a>
+            </div>
+
+
+            <span id="menu"style="font-size:30px;cursor:pointer;padding-right:20px;" onclick="openNav()">&#9776;
+            </span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+
+
+
+
+            <a href="#banner" class="logo">Fashion<span>.</span></a>
+
+
+            <div class="menutoggle" onclick="togglemenu();"></div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#banner">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Men">Men</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Women">Women</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Accessories">Accessories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">Contact Us</a>
+                            </li>
+
+
+
+
+
+
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <!-- <i class="bi bi-list mobile-nav-toggle"></i>  -->
+
+
+
+    </header>
+
+
+
+    <section class="banner" id="banner">
+        <div class="content">
+
+            <h2><br><br><br><span>F</span>ASHION</h2>
+
+
+            <a href="https://www.ajio.com/shop/men" class="btnone">Shop Men</a>
+            &nbsp; &nbsp; &nbsp;
+            <a href="https://www.ajio.com/shop/women" class="btntwo">Shop Women</a>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="push">
+            <div class="column">
+                <h2 class="titleText"><span>A</span>bout Us </h2>
+                <p>Fashion is one of the most popular style or practices that are used by people and nowadays in the
+                    modern 21st century there will be hardly any person being unaware of the fashion sense.<br><br>
+                    Fashion popularity is more common among teenagers especially young school boys and girls show
+                    competitive spirit when it comes towards dressing smartly especially to ensure that they have sporty
+                    and trendy smart-up-to-date looks which makes them to deliver their fashion sense.<br><br>
+                    The fashionable society has been a major source that influences the style by putting up the society
+                    and people to follow the latest trends.<br>
+                    Teenagers have been wild on fashion as they want to stay stylish even the passport picture also
+                    people need to add style.<br>
+
+                    <!-- Students have been putting in extra efforts for the fashion and they buy expensive designer clothing which has the latest cut, design and sequence which is used by them to show variety of style.<br>
+ Fashion changes over time which was quite decent at one phase but now the trending styles such as dark approach and also using variety of colours and unique fancy stuff has been adding up extra efforts which make people to spend more money on fashion rather than on their food. -->
+                </p>
+
+
+            </div>
+            <div class="column">
+                <div class="imgBx">
+                    <img src="img/56.jpg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <section class="Men" id="Men">
+
+        <div class="title">
+            <h2 class="titleText">Men's <span>C</span>ollection</h2>
+            <div class="parah">
+                <p>Men's clothing though is basically structured around the pants and shirts but <br>still they can be
+                    categorized in to formal wear,<br> business wear, casual wear and athletic/sport wear which are
+                    divided <br>on
+                    the basis of the occasion they are worn on.</p>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="box">
+                <br>
+                <div class="imgBx">
+                    <img src="img/20.webp" alt="" srcset="">
+                </div>
+                <div class="test">
+                    <h3> <a href="https://www.flipkart.com/q/office-wear-for-mens">Business wear dress</a></h3>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/22.jpg" alt="" srcset="">
+                </div>
+                <div class="test">
+                    <h3><a href="https://www.myntra.com/men-casual-wear"> Casual wear dress</a></h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/16.jpg" alt="" srcset="">
+                </div>
+                <div class="test">
+                    <h3> <a href="https://www.ajio.com/s/topwear-4363-72841"> Sportswear dress </a> </h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/15.jpg" alt="" srcset="">
+                </div>
+                <div class="test">
+                    <h3><a href="https://www.ajio.com/men-jackets-coats/c/830216010">Winter wear dress</a></h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/18.webp" alt="" srcset="">
+                </div>
+                <div class="test">
+                    <h3> <a
+                            href="https://shop.adidas.co.in/?gclid=Cj0KCQjw5auGBhDEARIsAFyNm9F3rUiOAOYXHuyxPYbnx2_I_4uUUHCHiEbg0KZpWWN8XNHaYZgfkCkaAoPTEALw_wcB#search/Pag-60/No-0/0/All/ADIDAS%20SHOES">
+                            Casual Shoes</a></h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/19.webp" alt="" srcset="">
+                </div>
+                <div class="test">
+                    <h3><a href="https://www.ajio.com/men-formal-shoes/c/830207007"> Business Shoes</a></h3>
+
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/28.webp" alt="" srcset="">
+                </div>
+                <div class="test">
+                    <h3> <a href="https://www.ajio.com/men-flip-flop-slippers/c/830207001">Flip Flop / Sliders</a> </h3>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+
+
+    </section>
+
+
+    <section class="Women" id="Women">
+
+
+        <div class="Title">
+            <h2 class="titleText">Women's <span>C</span>ollection</h2>
+            <div class="parahparah">
+                <p>Womens wear is the clothing apparels for women.<br> The women clothing items under this section are
+                    available<br> in various styles from ladies tops to shirts,<br> kurtis to tunics, dresses to skirts,
+                    etc. <br>that are made of high quality fabric. </p>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/31.jpg" alt="" srcset="">
+                </div>
+                <div class="hover">
+                    <h3> <a href="https://www.myntra.com/women-formal-wear">Business wear dress</a></h3>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/27.jpg" alt="" srcset="">
+                </div>
+                <div class="hover">
+                    <h3><a href="https://www.urbanic.com/activity/1326"> Casual wear dress</a></h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/37.jpg" alt="" srcset="">
+                </div>
+                <div class="hover">
+                    <h3> <a href="https://www.andindia.com/occasional/winter-wear.html"> Winter wear dress </a> </h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/32.jpg" alt="" srcset="">
+                </div>
+                <div class="hover">
+                    <h3><a href="https://www.nykaafashion.com/indianwear/c/4">Traditional Dress</a></h3>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/26.jpeg" alt="" srcset="">
+                </div>
+                <div class="hover">
+                    <h3> <a href="https://www.flipkart.com/womens-dresses/net~fabric/pr?sid=clo%2Codx%2Cmaj%2Cjhy"> Net
+                            Dress</a></h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/25.jpeg" alt="" srcset="">
+                </div>
+                <div class="hover">
+                    <h3><a href="https://www.zivame.com"> Lingerie</a></h3>
+
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/33.jpeg" alt="" srcset="">
+                </div>
+                <div class="hover">
+                    <h3><a href="https://www.ajio.com/women-flip-flop-slippers/c/830307001"> Flip / Flop</a></h3>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/34.webp" alt="" srcset="">
+                </div>
+                <div class="hover">
+                    <h3><a href="https://www.myntra.com/heels"> High Heels</a></h3>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <section class="Accessories" id="Accessories">
+
+
+        <div class="title">
+            <h2 class="titleText"> <span>A</span>ccessories</h2>
+            <div class="parah">
+                <p> Fashion accessories can be loosely categorized into two general areas:<br> those that are carried
+                    and those that are worn.<br> Traditionally carried accessories include purses and handbags, hand
+                    fans,<br> parasols and umbrellas, wallets, canes, and ceremonial swords. Accessories that are worn
+                    may include <br>jackets, boots and shoes, cravats, ties, hats, bonnets, belts and suspenders,
+                    gloves, muffs, necklaces, <br>bracelets, watches, eyewear, sashes, shawls, scarves, lanyards, socks,
+                    pins, piercings, rings,<br> and stockings.
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/36.png" alt="" srcset="">
+                    <a href="https://www.ethoswatches.com/brands.html"> <img src="img/36.png" alt="" srcset=""> </a>
+                </div>
+                <div class="tata">
+                    <h3>Watches</h3>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/41.jpg" alt="" srcset="">
+                    <a href="https://www.nykaa.com/mens/c/77"> <img src="img/41.jpg" alt="" srcset=""> </a>
+
+                </div>
+                <div class="tata">
+                    <h3>Men's Beauty</h3>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/40.webp" alt="" srcset="">
+                    <a href="https://www.purplle.com"> <img src="img/40.webp" alt="" srcset=""></a>
+
+                </div>
+                <div class="tata">
+                    <h3>Women's Beauty</h3>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/38.webp" alt="" srcset="">
+                    <a href="https://www.titaneyeplus.com/sunglasses-unisex.html">
+
+                        <img src="img/38.webp" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="tata">
+                    <h3>Shades</h3>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <section class="Contact" id="Contact">
+
+
+        <div class="title">
+            <h2 class="titleText"> <span>C</span>ontact Us</h2>
+            <p>How can we Help ?</p>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="input">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Phone No.">
+            </div>
+
+            <div class="input">
+                <textarea placeholder="Your Message"></textarea>
+            </div>
+            <div class="input">
+                <input type="Submit" value="Send">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+
+
+
+// function togglemenu(){
+//     const togglemenu = document.querySelector('.menutoggle');
+//     menutoggle.classList.toggle('active')
+
+
+
+
+    </script>
+
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+91-9728103672", // WhatsApp number
+                call_to_action: "How may i help you?", // Call to action
+                position: "left", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+
+
+   
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+
+
+            a = new Date();
+
+
+
+            date = a.toLocaleDateString(undefined, options);
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+
+            document.getElementById('time').innerHTML = time + " <br>on" + date;
+
+        }, 1000);
+    </script>
+ -->
+
+
+
+
+
+
+
+
+
+
+    <!-- <footer>
+        <div class="footer">
+            <div class="useful-links">
+                <p id="useful-links">USEFULL-LINKS</p>
+                <br>
+               
+
+
+                <ul class="navigation">
+                    <li>
+                        <a href="#banner">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#Men">Men</a>
+                    </li>
+                    <li>
+                        <a href="#Women">Women</a>
+                    </li>
+                    <li>
+                        <a href="#Accessories">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact</a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+            <div class="dev-contact">
+                <p id="dev-contact">&nbsp;DEVELOPER CONTACT</p>
+                <p id="dev-details">Shruti Raheja </p>
+                <a href="tel:+91 9728103672">
+                    <p id="dev-details">+91 9728103672</p>
+                </a>
+                <a href="mailto:rahejashruti2803@gmail.com">
+                    <p id="dev-details">rahejashruti2803@gmail.com</p>
+                </a>
+
+            </div>
+    </footer> -->
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>Fashion</h3>
+                        <p>Being trendy and fashionable is just your own wish, no one can force you to do it and it is
+                            your own decision that how much and what type of fashion you are preferring according to
+                            place and requirement.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#banner">Home</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#Men">Men</a></li>
+                            <li><a href="#Women">Women</a></li>
+                            <li><a href="#Accessories">Accessories</a></li>
+                            <li><a href="#Contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Developer Contact</h4>
+                        <p>
+                            <strong>Name:</strong> Shruti Raheja<br>
+
+                            <strong>Phone:</strong><a href="tel:9728103672"> +91 9728103672<br></a>
+                            <strong>Email:</strong><a href="mailto:rahejashruti2803@gmail.com"> rahejashruti2803@gmail.com<br></a>
+                        </p>
+
+
+
+                        <div class="social-links">
+                            <a href="https://twitter.com/ShrutiRaheja7" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/shruti.raheja.92754" class="facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://instagram.com/3_shruti?utm_medium=copy_link" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/shruti-raheja-190475205?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOd%2FLKrRMSo64yoRZI2oKPg%3D%3D" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
